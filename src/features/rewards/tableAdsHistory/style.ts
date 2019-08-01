@@ -10,9 +10,9 @@ export const StyledDateTH = styled<{}, 'th'>('th')`
   font-family: ${p => p.theme.fontFamily.body};
   font-size: 12px;
   font-weight: 500;
-  border-bottom: 2px solid #dedfe4;
-  border-top: 2px solid #dedfe4;
-  color: #4B4C5C;
+  border-bottom: 2px solid ${p => p.theme.color.separatorLine};
+  border-top: 2px solid ${p => p.theme.color.separatorLine};
+  color: ${p => p.theme.color.text};
   padding: 12px 0;
   min-width: 55px;
 `
@@ -23,9 +23,9 @@ export const StyledAdTH = styled<{}, 'th'>('th')`
   font-family: ${p => p.theme.fontFamily.body};
   font-size: 12px;
   font-weight: 500;
-  border-bottom: 2px solid #dedfe4;
-  border-top: 2px solid #dedfe4;
-  color: #4B4C5C;
+  border-bottom: 2px solid ${p => p.theme.color.separatorLine};
+  border-top: 2px solid ${p => p.theme.color.separatorLine};
+  color: ${p => p.theme.color.text};
   padding: 12px 0;
   min-width: 550px;
 `
@@ -36,9 +36,9 @@ export const StyledCategoryTH = styled<{}, 'th'>('th')`
   font-family: ${p => p.theme.fontFamily.body};
   font-size: 12px;
   font-weight: 500;
-  border-bottom: 2px solid #dedfe4;
-  border-top: 2px solid #dedfe4;
-  color: #4B4C5C;
+  border-bottom: 2px solid ${p => p.theme.color.separatorLine};
+  border-top: 2px solid ${p => p.theme.color.separatorLine};
+  color: ${p => p.theme.color.text};
   padding: 12px 0;
   min-width: 220px;
 `
@@ -51,26 +51,11 @@ export const StyledTR = styled<{}, 'tr'>('tr')`
   text-align: left;
 `
 
-export const StyledToggleWrap = styled<{}, 'div'>('div')`
-  text-align: right;
-`
-
-export const StyledToggle = styled<{}, 'div'>('div')`
-  font-family: Poppins, sans-serif;
-  font-size: 13px;
-  color: #4c54d2;
-  text-transform: capitalize;
-  background: none;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-`
-
 export const StyledAdLink = styled<{}, 'a'>('a')`
   text-decoration: none;
   cursor: pointer;
   display: flex;
-  color: #686978
+  color: ${p => p.theme.color.text};
 `
 
 export const StyledAdTable = styled<{}, 'table'>('table')`
@@ -83,7 +68,7 @@ export const StyledAdContentDiv = styled<{}, 'div'>('div')`
   border: 1px solid;
   border-collapse: separate;
   border-radius: 5px;
-  border-color: #DADCE8;
+  border-color:  ${p => p.theme.color.subtle};
   padding: 10px;
   display: inline-flex;
   align-items: center;
@@ -113,12 +98,12 @@ export const StyledAdInfoDiv = styled<{}, 'div'>('div')`
 `
 export const StyledAdInfo = styled<{}, 'div'>('div')`
   display: block;
-  color: #AEB1C2;
+  color: ${p => p.theme.fontFamily.detailDescription};
   padding-bottom: 2px;
 `
 
 export const StyledAdBrand = styled<{}, 'div'>('div')`
-  font-family: Poppins, sans-serif;
+  font-family: ${p => p.theme.fontFamily.heading};
   font-weight: 600;
   padding-bottom: 2px;
 `
